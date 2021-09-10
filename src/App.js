@@ -4,10 +4,11 @@ import Landing from './Components/LandingPage/Landing';
 import {BrowserRouter , Route, Switch } from 'react-router-dom'
 import Login from './Components/LoginPage/Login';
 import Signup from './Components/SignupPage/Signup';
+import styled from 'styled-components';
 
 function App() {
   return (
-    
+   
     <BrowserRouter>
       <Switch>
       <Route exact path="/" component={Landing}></Route>
@@ -16,6 +17,7 @@ function App() {
    
    </Switch>
    </BrowserRouter>
+  
  
   );
 }

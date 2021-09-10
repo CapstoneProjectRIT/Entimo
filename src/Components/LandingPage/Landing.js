@@ -8,6 +8,7 @@ function Landing() {
     return (
         
         <Container>
+            <Incontainer>
             
             <Nav>
                 <Logo></Logo>
@@ -21,7 +22,7 @@ function Landing() {
         Get Updates</Tagline>
             <About>The real time platform designed to help people, to help each other: To ask, to update, to learn, to grow.</About>
             <Illustration></Illustration>
-         
+            </Incontainer>
         </Container>
        
     )
@@ -40,6 +41,14 @@ background-repeat: no-repeat;
 background-size: cover;
 background-image: url(${bc});
 
+`
+const Incontainer= styled.div
+`
+max-width: 1440px;
+height: 100%;
+min-height: 900px;
+background: transparent;
+margin: 0 auto;
 `
 const Nav= styled.nav
 `

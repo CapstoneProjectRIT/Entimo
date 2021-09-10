@@ -11,6 +11,8 @@ import leftimage from '../../assets/LoginBackground.png';
 function Login() {
     return (
         <Container>
+            <Incontainer>
+                <>
             <Leftcontainer>
                 <Logo></Logo>
                 <Welcome>Welcome Back</Welcome>
@@ -45,6 +47,8 @@ function Login() {
              <Link to="/signup" >  <Text style={{color: '#1976D2'}} >Create an account</Text></Link>
                 </div>
             </BottomContainer>
+            </>
+            </Incontainer>
         </Container>
     )
 }
@@ -58,8 +62,16 @@ min-height: 900px;
 background-repeat: no-repeat;
 background-size: cover;
 background: white;
-margin: 0 auto;
 
+`
+const Incontainer= styled.div
+`
+box-sizing: border-box;
+max-width: 1440px;
+height: 100%;
+min-height: 900px;
+background: transparent;
+margin: 0 auto;
 `
 
 const Leftcontainer= styled.div
